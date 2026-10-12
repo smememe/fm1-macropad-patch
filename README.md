@@ -3,8 +3,15 @@ English | [日本語](README.ja.md)
 # FM-1 Macropad Patch (unofficial)
 
 An unofficial patch for the official M-VAVE FM-1 firmware V15.
-It makes every button, key and knob send a USB-MIDI note, so you can use the FM-1 as a macro pad
-and assign shortcuts to it with tools such as Keyboard Maestro or BetterTouchTool.
+It makes every button, key and knob send a USB-MIDI note.
+
+The patch alone does not turn the FM-1 into a macro pad. The patch turns every input into MIDI,
+and an app on your computer turns that MIDI into shortcuts. Together they let you use the FM-1 as a macro pad.
+
+```
+FM-1 buttons, keys, knobs ─(USB-MIDI notes)→ shortcut app ─→ shortcuts
+          ↑ this patch                          ↑ Keyboard Maestro, BetterTouchTool, etc.
+```
 
 **This repository does not contain any M-VAVE firmware.** Download `FM-1.fwsc` (V15) from the official
 website yourself and apply the patch locally.
