@@ -30,6 +30,7 @@ website yourself and apply the patch locally.
 - Note-on velocity follows the unit's own setting (1 on the author's unit). Note-off velocity is 100.
 - The settings screen is no longer reachable after patching, so change the velocity setting with the official firmware before flashing if you need to.
 - All LEDs stay off, and the display stays off.
+- The unit still makes sound when you use it. The MASTER knob (volume) is left as is and sends no MIDI, so turn it down when using the FM-1 as a macro pad.
 - Full mapping: [docs/NOTE_MAP.md](docs/NOTE_MAP.md)
 
 ![Note number layout](docs/layout.svg)

@@ -52,4 +52,5 @@ All messages are on MIDI channel 1. See the [layout diagram](layout.svg) for whe
 | KNOB4 | 92 | 100 |
 | PRESETS | 93 | 101 |
 
-MASTER is the volume knob and sends no MIDI.
+MASTER is the volume knob and sends no MIDI. The unit still makes sound when you use it, so turn MASTER down
+when using the FM-1 as a macro pad.

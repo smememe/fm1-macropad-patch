@@ -55,6 +55,7 @@ ask where to connect it. Choose Windows. If it then asks for permission to conne
 ## 4. Check
 
 - All LEDs are off and the display stays off.
+- The unit still makes sound when you use it. Turn the MASTER knob (volume) down.
 - Assign a shortcut to one key in your shortcut app and press the key.
 - To see every note, use a MIDI monitor (e.g. [MIDI Monitor](https://www.snoize.com/midimonitor/) on macOS,
   [MIDI-OX](http://www.midiox.com/) on Windows) and compare with [NOTE_MAP.md](NOTE_MAP.md).
