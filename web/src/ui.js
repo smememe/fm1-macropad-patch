@@ -34,6 +34,7 @@
       step4b: 'Click “Select Firmware” and choose FM-1-macropad.fwsc. It should show “Firmware version:51”.',
       step4c: 'Click “Update Firmware” and wait until it completes (about 20–60 seconds). Do not unplug the cable.',
       step4d: 'All LEDs go dark. Assign shortcuts to the notes in your shortcut app.',
+      monitor: 'To see which note each control sends, open the input monitor (Chrome / Edge).',
       revert: 'To go back, flash the official FM-1.fwsc with M-UPGRADE.',
       footer: 'Source, note map and troubleshooting'
     },
@@ -67,6 +68,7 @@
       step4b: '「Select Firmware」で FM-1-macropad.fwsc を選びます。「Firmware version:51」と表示されます。',
       step4c: '「Update Firmware」を押し、完了するまで待ちます（20〜60 秒ほど）。途中でケーブルを抜かないでください。',
       step4d: 'LED がすべて消えます。ショートカット用のアプリで、各ノートにショートカットを割り当ててください。',
+      monitor: 'どの入力が何番のノートを送るかは、入力モニター（Chrome・Edge）で確かめられます。',
       revert: '元に戻すときは、M-UPGRADE で公式の FM-1.fwsc を書き込みます。',
       footer: 'ソースコード・ノート番号の対応表・困ったとき'
     }

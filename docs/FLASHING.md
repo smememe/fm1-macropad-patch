@@ -57,7 +57,8 @@ ask where to connect it. Choose Windows. If it then asks for permission to conne
 - All LEDs are off and the display shows nothing. The backlight is not changed, so the screen glows faintly.
 - The unit still makes sound when you use it. Turn the MASTER knob (volume) down.
 - Assign a shortcut to one key in your shortcut app and press the key.
-- To see every note, use a MIDI monitor (e.g. [MIDI Monitor](https://www.snoize.com/midimonitor/) on macOS,
+- To see every note, use the [input monitor](https://smememe.github.io/fm1-macropad-patch/monitor.html)
+  (Chrome / Edge; the control lights up on the diagram) or a MIDI monitor app (e.g. [MIDI Monitor](https://www.snoize.com/midimonitor/) on macOS,
   [MIDI-OX](http://www.midiox.com/) on Windows) and compare with [NOTE_MAP.md](NOTE_MAP.md).
 
 ## 5. Revert

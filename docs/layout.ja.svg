@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="1000" height="640" font-family="Helvetica, Arial, 'Hiragino Sans', 'Noto Sans JP', sans-serif">
 <rect width="1000" height="640" fill="#ffffff"/>
-<text x="500.0" y="24.0" font-size="18" fill="#222" text-anchor="middle" dominant-baseline="central" font-weight="bold">FM-1 マクロパッド化パッチ：ノート番号（MIDI チャンネル 1）</text>
+<text x="500" y="24.0" font-size="18" fill="#222" text-anchor="middle" dominant-baseline="central" font-weight="bold">FM-1 マクロパッド化パッチ：ノート番号（MIDI チャンネル 1）</text>
 <rect x="20" y="48" width="960" height="520" rx="28" fill="none" stroke="#222222" stroke-width="2.5"/>
 <circle cx="80" cy="110" r="17" fill="none" stroke="#222222" stroke-width="2"/>
 <line x1="80" y1="104" x2="80" y2="95" stroke="#222222" stroke-width="2"/>
@@ -83,58 +83,58 @@
 <text x="910" y="300.0" font-size="14" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">52</text>
 <rect x="38" y="340" width="924" height="215" rx="18" fill="none" stroke="#666666" stroke-width="1"/>
 <rect x="58" y="450" width="44" height="92" rx="20" fill="none" stroke="#222222" stroke-width="1.5"/>
-<text x="80.0" y="496.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">53</text>
+<text x="80" y="496.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">53</text>
 <rect x="114" y="450" width="44" height="92" rx="20" fill="none" stroke="#222222" stroke-width="1.5"/>
-<text x="136.0" y="496.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">55</text>
+<text x="136" y="496.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">55</text>
 <rect x="170" y="450" width="44" height="92" rx="20" fill="none" stroke="#222222" stroke-width="1.5"/>
-<text x="192.0" y="496.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">57</text>
+<text x="192" y="496.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">57</text>
 <rect x="226" y="450" width="44" height="92" rx="20" fill="none" stroke="#222222" stroke-width="1.5"/>
-<text x="248.0" y="496.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">59</text>
+<text x="248" y="496.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">59</text>
 <rect x="282" y="450" width="44" height="92" rx="20" fill="none" stroke="#222222" stroke-width="1.5"/>
-<text x="304.0" y="496.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">60</text>
+<text x="304" y="496.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">60</text>
 <rect x="338" y="450" width="44" height="92" rx="20" fill="none" stroke="#222222" stroke-width="1.5"/>
-<text x="360.0" y="496.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">62</text>
+<text x="360" y="496.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">62</text>
 <rect x="394" y="450" width="44" height="92" rx="20" fill="none" stroke="#222222" stroke-width="1.5"/>
-<text x="416.0" y="496.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">64</text>
+<text x="416" y="496.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">64</text>
 <rect x="450" y="450" width="44" height="92" rx="20" fill="none" stroke="#222222" stroke-width="1.5"/>
-<text x="472.0" y="496.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">65</text>
+<text x="472" y="496.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">65</text>
 <rect x="506" y="450" width="44" height="92" rx="20" fill="none" stroke="#222222" stroke-width="1.5"/>
-<text x="528.0" y="496.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">67</text>
+<text x="528" y="496.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">67</text>
 <rect x="562" y="450" width="44" height="92" rx="20" fill="none" stroke="#222222" stroke-width="1.5"/>
-<text x="584.0" y="496.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">69</text>
+<text x="584" y="496.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">69</text>
 <rect x="618" y="450" width="44" height="92" rx="20" fill="none" stroke="#222222" stroke-width="1.5"/>
-<text x="640.0" y="496.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">71</text>
+<text x="640" y="496.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">71</text>
 <rect x="674" y="450" width="44" height="92" rx="20" fill="none" stroke="#222222" stroke-width="1.5"/>
-<text x="696.0" y="496.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">72</text>
+<text x="696" y="496.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">72</text>
 <rect x="730" y="450" width="44" height="92" rx="20" fill="none" stroke="#222222" stroke-width="1.5"/>
-<text x="752.0" y="496.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">74</text>
+<text x="752" y="496.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">74</text>
 <rect x="786" y="450" width="44" height="92" rx="20" fill="none" stroke="#222222" stroke-width="1.5"/>
-<text x="808.0" y="496.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">76</text>
+<text x="808" y="496.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">76</text>
 <rect x="842" y="450" width="44" height="92" rx="20" fill="none" stroke="#222222" stroke-width="1.5"/>
-<text x="864.0" y="496.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">77</text>
+<text x="864" y="496.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">77</text>
 <rect x="898" y="450" width="44" height="92" rx="20" fill="none" stroke="#222222" stroke-width="1.5"/>
-<text x="920.0" y="496.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">79</text>
-<rect x="90.0" y="352" width="36" height="84" rx="18" fill="none" stroke="#222222" stroke-width="1.5"/>
-<text x="108.0" y="394.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">54</text>
-<rect x="146.0" y="352" width="36" height="84" rx="18" fill="none" stroke="#222222" stroke-width="1.5"/>
-<text x="164.0" y="394.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">56</text>
-<rect x="202.0" y="352" width="36" height="84" rx="18" fill="none" stroke="#222222" stroke-width="1.5"/>
-<text x="220.0" y="394.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">58</text>
-<rect x="314.0" y="352" width="36" height="84" rx="18" fill="none" stroke="#222222" stroke-width="1.5"/>
-<text x="332.0" y="394.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">61</text>
-<rect x="370.0" y="352" width="36" height="84" rx="18" fill="none" stroke="#222222" stroke-width="1.5"/>
-<text x="388.0" y="394.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">63</text>
-<rect x="482.0" y="352" width="36" height="84" rx="18" fill="none" stroke="#222222" stroke-width="1.5"/>
-<text x="500.0" y="394.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">66</text>
-<rect x="538.0" y="352" width="36" height="84" rx="18" fill="none" stroke="#222222" stroke-width="1.5"/>
-<text x="556.0" y="394.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">68</text>
-<rect x="594.0" y="352" width="36" height="84" rx="18" fill="none" stroke="#222222" stroke-width="1.5"/>
-<text x="612.0" y="394.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">70</text>
-<rect x="706.0" y="352" width="36" height="84" rx="18" fill="none" stroke="#222222" stroke-width="1.5"/>
-<text x="724.0" y="394.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">73</text>
-<rect x="762.0" y="352" width="36" height="84" rx="18" fill="none" stroke="#222222" stroke-width="1.5"/>
-<text x="780.0" y="394.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">75</text>
-<rect x="874.0" y="352" width="36" height="84" rx="18" fill="none" stroke="#222222" stroke-width="1.5"/>
-<text x="892.0" y="394.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">78</text>
-<text x="500.0" y="600.0" font-size="13" fill="#333" text-anchor="middle" dominant-baseline="central" font-weight="normal">ボタン・鍵盤：押すとノートオン、離すとノートオフ。　ノブ：時計回り / 反時計回り（ノートオンのみ）</text>
+<text x="920" y="496.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">79</text>
+<rect x="90" y="352" width="36" height="84" rx="18" fill="none" stroke="#222222" stroke-width="1.5"/>
+<text x="108" y="394.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">54</text>
+<rect x="146" y="352" width="36" height="84" rx="18" fill="none" stroke="#222222" stroke-width="1.5"/>
+<text x="164" y="394.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">56</text>
+<rect x="202" y="352" width="36" height="84" rx="18" fill="none" stroke="#222222" stroke-width="1.5"/>
+<text x="220" y="394.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">58</text>
+<rect x="314" y="352" width="36" height="84" rx="18" fill="none" stroke="#222222" stroke-width="1.5"/>
+<text x="332" y="394.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">61</text>
+<rect x="370" y="352" width="36" height="84" rx="18" fill="none" stroke="#222222" stroke-width="1.5"/>
+<text x="388" y="394.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">63</text>
+<rect x="482" y="352" width="36" height="84" rx="18" fill="none" stroke="#222222" stroke-width="1.5"/>
+<text x="500" y="394.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">66</text>
+<rect x="538" y="352" width="36" height="84" rx="18" fill="none" stroke="#222222" stroke-width="1.5"/>
+<text x="556" y="394.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">68</text>
+<rect x="594" y="352" width="36" height="84" rx="18" fill="none" stroke="#222222" stroke-width="1.5"/>
+<text x="612" y="394.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">70</text>
+<rect x="706" y="352" width="36" height="84" rx="18" fill="none" stroke="#222222" stroke-width="1.5"/>
+<text x="724" y="394.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">73</text>
+<rect x="762" y="352" width="36" height="84" rx="18" fill="none" stroke="#222222" stroke-width="1.5"/>
+<text x="780" y="394.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">75</text>
+<rect x="874" y="352" width="36" height="84" rx="18" fill="none" stroke="#222222" stroke-width="1.5"/>
+<text x="892" y="394.0" font-size="13" fill="#222222" text-anchor="middle" dominant-baseline="central" font-weight="bold">78</text>
+<text x="500" y="600.0" font-size="13" fill="#333" text-anchor="middle" dominant-baseline="central" font-weight="normal">ボタン・鍵盤：押すとノートオン、離すとノートオフ。　ノブ：時計回り / 反時計回り（ノートオンのみ）</text>
 </svg>

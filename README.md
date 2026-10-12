@@ -33,7 +33,7 @@ website yourself and apply the patch locally.
 - The settings screen is no longer reachable after patching, so change the velocity setting with the official firmware before flashing if you need to.
 - All LEDs stay off. The display shows nothing, but the patch does not touch the backlight, so the screen still glows faintly.
 - The unit still makes sound when you use it. The MASTER knob (volume) is left as is and sends no MIDI, so turn it down when using the FM-1 as a macro pad.
-- Full mapping: [docs/NOTE_MAP.md](docs/NOTE_MAP.md)
+- Full mapping: [docs/NOTE_MAP.md](docs/NOTE_MAP.md). To see it live, use the [input monitor](https://smememe.github.io/fm1-macropad-patch/monitor.html) (Chrome / Edge): the control you press or turn lights up on the diagram.
 
 ![Note number layout](docs/layout.svg)
 
@@ -108,7 +108,7 @@ Flash the official `FM-1.fwsc` with M-UPGRADE.
 - **M-UPGRADE does not find the unit**: reconnect the USB cable and restart M-UPGRADE. Close any other MIDI app that may be holding the device.
 - **"A firmware that does not conform to the device was selected"**: no file is selected, or it is not an FM-1 file. Select the `.fwsc` made by the patcher again.
 - **The update stopped halfway**: keep USB connected, power-cycle the unit, and try flashing again with M-UPGRADE (the author has not tested an interrupted update).
-- **A shortcut does not fire**: use a MIDI monitor (an app that just lists incoming MIDI, e.g. [MIDI Monitor](https://www.snoize.com/midimonitor/) on macOS or [MIDI-OX](http://www.midiox.com/) on Windows) to check whether the unit sends notes.
+- **A shortcut does not fire**: check whether the unit sends notes with the [input monitor](https://smememe.github.io/fm1-macropad-patch/monitor.html) (Chrome / Edge) or a MIDI monitor app (e.g. [MIDI Monitor](https://www.snoize.com/midimonitor/) on macOS or [MIDI-OX](http://www.midiox.com/) on Windows).
   If it does, check your shortcut app (velocity conditions, etc.). If it does not, suspect the flashing or the connection.
 - **Going back to stock**: flash the official `FM-1.fwsc` with M-UPGRADE.
 
@@ -134,7 +134,8 @@ changes the version string and one padding byte in the EQ name, then updates the
 ## For developers
 
 - `fm1patch.py` holds the patch table. The browser patcher (`docs/index.html`) is built from `web/src/`:
-  `python3 web/export_patches.py && python3 web/build_web.py`
+  `python3 web/export_patches.py && python3 web/build_web.py`. The input monitor (`docs/monitor.html`) and the
+  layout diagrams (`node web/make_layout_svg.cjs`) share `web/src/fm1layout.js`.
 - Tests need the official `FM-1.fwsc`: `FM1_FWSC=/path/to/FM-1.fwsc python3 tests/test_patch.py` and
   `node tests/test_web.cjs /path/to/FM-1.fwsc`
 

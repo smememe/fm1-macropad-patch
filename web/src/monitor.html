@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src '{{SCRIPT_HASH}}'; style-src '{{STYLE_HASH}}'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>FM-1 Input Monitor</title>
+<style>{{STYLE}}</style>
+</head>
+<body>
+<main class="wide">
+  <nav class="lang" aria-label="Language">
+    <button id="lang-en" type="button" aria-pressed="true">English</button>
+    <button id="lang-ja" type="button" aria-pressed="false">日本語</button>
+  </nav>
+
+  <h1 data-i18n="title">FM-1 Input Monitor</h1>
+  <p data-i18n="lead"></p>
+  <p class="local" data-i18n="local"></p>
+
+  <div class="controls">
+    <button id="start" type="button" class="button" data-i18n="start"></button>
+    <label class="select"><span data-i18n="input"></span>
+      <select id="input-select" disabled></select>
+    </label>
+    <span id="status" class="status" hidden></span>
+  </div>
+  <p id="start-hint" class="local" data-i18n="startHint"></p>
+
+  <div id="layout" class="layout"></div>
+
+  <section>
+    <h2><span data-i18n="log"></span> <button id="clear" type="button" class="small" data-i18n="clear"></button></h2>
+    <ol id="log" class="log" aria-live="polite"></ol>
+  </section>
+
+  <footer><a id="back-link" rel="noopener" data-i18n="back"></a></footer>
+</main>
+<script>{{SCRIPT}}</script>
+</body>
+</html>

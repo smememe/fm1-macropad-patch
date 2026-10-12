@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-F36g18kJxnpyxcwaMQvon4078JYn/n/a5xPCTMk+abI='; style-src 'sha256-Yjx1N4T/GrmYf47Fwh4jRkwu+U7LwGUMo6tkCJ23PoU='; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-zL4UL6gEJAhBWDk/8zNYif8wfGkL0VmfI5u5S+iXujg='; style-src 'sha256-Yjx1N4T/GrmYf47Fwh4jRkwu+U7LwGUMo6tkCJ23PoU='; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <title>FM-1 Macropad Patch</title>
 <style>:root {
@@ -128,6 +128,7 @@ footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line);
       <li data-i18n="step4c"></li>
       <li data-i18n="step4d"></li>
     </ol>
+    <p><a href="monitor.html" data-i18n="monitor"></a></p>
     <p data-i18n="revert"></p>
   </section>
 
@@ -483,6 +484,7 @@ if (typeof module !== 'undefined') module.exports = FM1Patch;
       step4b: 'Click “Select Firmware” and choose FM-1-macropad.fwsc. It should show “Firmware version:51”.',
       step4c: 'Click “Update Firmware” and wait until it completes (about 20–60 seconds). Do not unplug the cable.',
       step4d: 'All LEDs go dark. Assign shortcuts to the notes in your shortcut app.',
+      monitor: 'To see which note each control sends, open the input monitor (Chrome / Edge).',
       revert: 'To go back, flash the official FM-1.fwsc with M-UPGRADE.',
       footer: 'Source, note map and troubleshooting'
     },
@@ -516,6 +518,7 @@ if (typeof module !== 'undefined') module.exports = FM1Patch;
       step4b: '「Select Firmware」で FM-1-macropad.fwsc を選びます。「Firmware version:51」と表示されます。',
       step4c: '「Update Firmware」を押し、完了するまで待ちます（20〜60 秒ほど）。途中でケーブルを抜かないでください。',
       step4d: 'LED がすべて消えます。ショートカット用のアプリで、各ノートにショートカットを割り当ててください。',
+      monitor: 'どの入力が何番のノートを送るかは、入力モニター（Chrome・Edge）で確かめられます。',
       revert: '元に戻すときは、M-UPGRADE で公式の FM-1.fwsc を書き込みます。',
       footer: 'ソースコード・ノート番号の対応表・困ったとき'
     }

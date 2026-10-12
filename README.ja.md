@@ -33,7 +33,7 @@ M-VAVE FM-1 の公式ファームウェア V15 に当てる非公式パッチ。
 - 改造後は設定画面に入れないので、ベロシティを変えたい場合は書き込む前に公式ファームウェアで設定しておく
 - LED はすべて消える。画面は何も表示しないが、バックライトの制御は元のままなので、画面はうっすら光る
 - 本体の発音は残るので、操作すると本体から音も出る。MASTER ノブ（音量）は MIDI にせず元のまま残してあるので、マクロパッドとして使うときは音量を絞っておくとよい
-- 対応表は [docs/NOTE_MAP.md](docs/NOTE_MAP.md)
+- 対応表は [docs/NOTE_MAP.md](docs/NOTE_MAP.md)。実際に押して確かめるなら [入力モニター](https://smememe.github.io/fm1-macropad-patch/monitor.html)（Chrome・Edge）が使える。押したり回したりした入力が図の上で光る
 
 ![ノート番号の配置図](docs/layout.ja.svg)
 
@@ -109,7 +109,7 @@ M-UPGRADE で公式の `FM-1.fwsc` を書き込めば元に戻る。
 - **M-UPGRADE が本体を見つけない**：USB ケーブルを挿し直し、M-UPGRADE を起動し直す。ほかの MIDI アプリが本体をつかんでいれば閉じる
 - **「A firmware that does not conform to the device was selected」と出る**：ファイルが選ばれていないか、FM-1 用でない。パッチャーが作った `.fwsc` を選び直す
 - **書き込みが途中で止まった**：USB をつないだまま本体の電源を入れ直し、M-UPGRADE でもう一度書き込みを試す（作者は途中で止まった場合を試していない）
-- **ショートカットが動かない**：MIDI モニター（届いた MIDI を一覧で見るだけのアプリ。macOS は [MIDI Monitor](https://www.snoize.com/midimonitor/)、Windows は [MIDI-OX](http://www.midiox.com/) など）で、本体からノートが届いているか確かめる。
+- **ショートカットが動かない**：[入力モニター](https://smememe.github.io/fm1-macropad-patch/monitor.html)（Chrome・Edge）か MIDI モニターのアプリ（macOS は [MIDI Monitor](https://www.snoize.com/midimonitor/)、Windows は [MIDI-OX](http://www.midiox.com/) など）で、本体からノートが届いているか確かめる。
   届いていればショートカット側のアプリの設定（ベロシティ条件など）を見直す。届いていなければ本体側（書き込み・接続）を疑う
 - **元に戻したい**：M-UPGRADE で公式の `FM-1.fwsc` を書き込む
 
@@ -135,7 +135,8 @@ M-UPGRADE で公式の `FM-1.fwsc` を書き込めば元に戻る。
 ## 開発する人へ
 
 - 書き換えの一覧は `fm1patch.py` にある。ブラウザ版（`docs/index.html`）は `web/src/` から作る：
-  `python3 web/export_patches.py && python3 web/build_web.py`
+  `python3 web/export_patches.py && python3 web/build_web.py`。入力モニター（`docs/monitor.html`）と配置図
+  （`node web/make_layout_svg.cjs`）は `web/src/fm1layout.js` を共用する
 - テストには公式の `FM-1.fwsc` が要る：`FM1_FWSC=/path/to/FM-1.fwsc python3 tests/test_patch.py` と
   `node tests/test_web.cjs /path/to/FM-1.fwsc`
 
