@@ -37,6 +37,8 @@ Knobs 0–6 send notes 87–93 when turned clockwise and 95–101 counter-clockw
 
 ## 3. LEDs and display off
 
+The display's backlight is not changed by these patches, so the blank screen still glows faintly.
+
 | | Offset | Original | New | Meaning |
 |---|---|---|---|---|
 | K | 0x245A8 | `bfea97d5` | `00000000` | nop the call that lights an LED on note-on |

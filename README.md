@@ -31,7 +31,7 @@ website yourself and apply the patch locally.
 - 55 inputs in total. Buttons and keys send note-on when pressed and note-off when released. Knobs send a single note-on per detent.
 - Note-on velocity follows the unit's own setting (1 on the author's unit). Note-off velocity is 100.
 - The settings screen is no longer reachable after patching, so change the velocity setting with the official firmware before flashing if you need to.
-- All LEDs stay off, and the display stays off.
+- All LEDs stay off. The display shows nothing, but the patch does not touch the backlight, so the screen still glows faintly.
 - The unit still makes sound when you use it. The MASTER knob (volume) is left as is and sends no MIDI, so turn it down when using the FM-1 as a macro pad.
 - Full mapping: [docs/NOTE_MAP.md](docs/NOTE_MAP.md)
 

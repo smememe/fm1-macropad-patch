@@ -56,4 +56,5 @@ other pins and happens before this point, so input is not affected.
 
 ## Display
 
-Patch N replaces the "display on" command in the display initialisation with "display off".
+Patch N replaces the "display on" command in the display initialisation with "display off". The panel shows
+nothing, but the backlight is not changed, so the screen still glows faintly.
