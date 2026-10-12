@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src '{{SCRIPT_HASH}}'; style-src '{{STYLE_HASH}}'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>FM-1 Macropad Patch</title>
+<style>{{STYLE}}</style>
+</head>
+<body>
+<main>
+  <nav class="lang" aria-label="Language">
+    <button id="lang-en" type="button" aria-pressed="true">English</button>
+    <button id="lang-ja" type="button" aria-pressed="false">日本語</button>
+  </nav>
+
+  <h1 data-i18n="title">FM-1 Macropad Patch</h1>
+  <p data-i18n="lead"></p>
+  <p class="local" data-i18n="local"></p>
+
+  <section class="warn" aria-labelledby="warn-title">
+    <h2 id="warn-title" data-i18n="warnTitle"></h2>
+    <ul>
+      <li data-i18n="warn1"></li>
+      <li data-i18n="warn2"></li>
+      <li data-i18n="warn3"></li>
+    </ul>
+    <p><a id="readme-link" rel="noopener" data-i18n="warnMore"></a></p>
+  </section>
+
+  <section>
+    <h2 data-i18n="step1"></h2>
+    <p data-i18n="step1Body"></p>
+  </section>
+
+  <section>
+    <h2 data-i18n="step2"></h2>
+    <div id="drop" class="drop">
+      <span data-i18n="drop"></span>
+      <label class="pick"><input id="file" type="file" accept=".fwsc"><span data-i18n="choose"></span></label>
+    </div>
+    <ul id="checks" class="checks" aria-live="polite"></ul>
+    <p id="error" class="error" hidden></p>
+    <details id="detail" hidden>
+      <summary data-i18n="details"></summary>
+      <pre id="detail-body"></pre>
+    </details>
+  </section>
+
+  <section id="result" hidden>
+    <h2 data-i18n="step3"></h2>
+    <p><a id="download" class="button" download="FM-1-macropad.fwsc" data-i18n="download"></a></p>
+    <p class="sha"><span data-i18n="outSha"></span><br><code id="out-sha"></code></p>
+  </section>
+
+  <section>
+    <h2 data-i18n="step4"></h2>
+    <ol>
+      <li data-i18n="step4a"></li>
+      <li data-i18n="step4b"></li>
+      <li data-i18n="step4c"></li>
+      <li data-i18n="step4d"></li>
+    </ol>
+    <p data-i18n="revert"></p>
+  </section>
+
+  <footer><a id="repo-link" rel="noopener" data-i18n="footer"></a></footer>
+</main>
+<script>{{SCRIPT}}</script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+.DS_Store
+.env
+*.fwsc
+*.bin
+__pycache__/
+*.pyc
+node_modules/
