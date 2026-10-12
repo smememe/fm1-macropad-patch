@@ -40,14 +40,13 @@ The FM-1 only sends MIDI notes, so you need an app that receives them and turns 
 
 | App | OS | Price | Notes |
 |---|---|---|---|
-| [Keyboard Maestro](https://www.keyboardmaestro.com/) | macOS | Paid | MIDI note triggers. The only one the author has tested with the FM-1 |
+| [Keyboard Maestro](https://www.keyboardmaestro.com/) | macOS | Paid | MIDI note triggers |
 | [BetterTouchTool](https://folivora.ai/) | macOS | Paid | MIDI note triggers |
 | [MidiKey2Key](https://midikey2key.de/) | Windows | Free (donationware) | Turns MIDI input into keystrokes or launches programs |
 | [Bome MIDI Translator Pro](https://www.bome.com/products/miditranslator) | Windows / macOS | Paid (trial available) | Advanced rules, logic and layers |
 
 - See the table above and [docs/NOTE_MAP.md](docs/NOTE_MAP.md) for the note numbers.
 - Whether a note-on with velocity 1 triggers an action depends on the app. Set triggers to accept any velocity.
-- Apart from Keyboard Maestro, the author has not tested these apps with the FM-1.
 
 ## What you lose
 

@@ -40,14 +40,13 @@ FM-1 は MIDI のノートを送るだけなので、受け取ってショート
 
 | アプリ | OS | 価格 | 備考 |
 |---|---|---|---|
-| [Keyboard Maestro](https://www.keyboardmaestro.com/) | macOS | 有料 | MIDI のノートをトリガーにできる。作者が FM-1 で動作を確認したのはこれだけ |
+| [Keyboard Maestro](https://www.keyboardmaestro.com/) | macOS | 有料 | MIDI のノートをトリガーにできる |
 | [BetterTouchTool](https://folivora.ai/) | macOS | 有料 | MIDI のノートをトリガーにできる |
 | [MidiKey2Key](https://midikey2key.de/) | Windows | 無料（寄付制） | MIDI を受けてキー操作やプログラムの起動を行う |
 | [Bome MIDI Translator Pro](https://www.bome.com/products/miditranslator) | Windows / macOS | 有料（試用版あり） | 条件分岐やレイヤーなど機能が多い |
 
 - 使うノート番号は上の「できること」の表と [docs/NOTE_MAP.md](docs/NOTE_MAP.md) を参照
 - ノートオンのベロシティが 1 でも反応するかはアプリの設定による。「ベロシティを問わない」設定にしておくとよい
-- Keyboard Maestro 以外は、作者は FM-1 との組み合わせを試していない
 
 ## 失うもの
 
