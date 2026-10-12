@@ -123,7 +123,7 @@ Bug reports are welcome in [Issues](../../issues). This is a personal hobby proj
 | Firmware | Official V15 (`FM-1_015`) |
 | Flashing | M-UPGRADE for macOS (released 2026-09-08) / for Windows (Windows 11 on ARM in Parallels) |
 | Verified | Flashing the patch, reverting to official (macOS), all 55 inputs, all LEDs off, reception in Keyboard Maestro |
-| Patcher | Browser: Chromium-based, Safari (macOS), Edge (Windows 11), and a saved copy of the page; the output matched the expected result in each. Python: Python 3.14 on macOS |
+| Patcher | Browser: Chromium-based, Safari (macOS), Edge (Windows 11), and a saved copy of the page; the output matched the expected result in each. Python: 3.9 and 3.14 on macOS |
 | Not verified | Flashing from an x64 Windows PC, reverting from Windows |
 
 ## How it works

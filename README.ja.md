@@ -124,7 +124,7 @@ M-UPGRADE で公式の `FM-1.fwsc` を書き込めば元に戻る。
 | ファームウェア | 公式 V15（`FM-1_015`） |
 | 書き込み | M-UPGRADE macOS 版（2026-09-08 配布）／Windows 版（Parallels 上の Windows 11 ARM 版） |
 | 確かめたこと | 改造版の書き込み、公式への書き戻し（macOS）、全 55 入力のノート、LED の全消灯、Keyboard Maestro での受信 |
-| パッチャー | ブラウザ版：Chromium 系・Safari（macOS）・Edge（Windows 11）、保存した HTML を開く使い方で、出力が期待どおりになることを確認。Python 版：macOS の Python 3.14 |
+| パッチャー | ブラウザ版：Chromium 系・Safari（macOS）・Edge（Windows 11）、保存した HTML を開く使い方で、出力が期待どおりになることを確認。Python 版：macOS の Python 3.9・3.14 |
 | 確かめていないこと | x64 の Windows PC での書き込み、Windows での書き戻し |
 
 ## 仕組み
