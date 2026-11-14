@@ -150,3 +150,5 @@ changes the version string and one padding byte in the EQ name, then updates the
 - Bundled third-party code: see [THIRD_PARTY.md](THIRD_PARTY.md)
 - **The M-VAVE firmware, and the original byte sequences listed in [docs/PATCHES.md](docs/PATCHES.md) for verification, belong to M-VAVE (or their respective owners) and are not covered by the MIT License.**
 - M-VAVE and FM-1 are trademarks or product names of their respective owners.
+
+Related: try FM-1 firmwares in the browser with the free community [FM-1 Emulator](https://fm1-emulator.atst.tools/).
