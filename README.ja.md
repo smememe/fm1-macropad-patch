@@ -8,11 +8,12 @@ M-VAVE FM-1 の公式ファームウェア V15 に当てる非公式パッチ。
 パッチだけで左手デバイスになるわけではない。パッチで FM-1 の入力をすべて MIDI にし、
 その MIDI をパソコン側のアプリでショートカットに変えることで、左手デバイス（マクロパッド）として使えるようになる。
 
-**このリポジトリには M-VAVE のファームウェアは入っていない。** 公式サイトから自分で入手した
-`FM-1.fwsc`（V15）に、手元でパッチを当てて使う。
+**書き込める状態のファームウェアを [最新のリリース](https://github.com/smememe/fm1-macropad-patch/releases/latest) に添付してある。** 公式の `FM-1.fwsc`（V15）に
+自分でパッチを当てて、同じファイルを作ることもできる。
 
 > **非公式の改造で、M-VAVE とは関係がない。** M-VAVE の承認も支援も受けていない。
-> M-VAVE と FM-1 は各権利者の商標または製品名である。**このリポジトリに M-VAVE のファームウェアは入っていない。**
+> M-VAVE と FM-1 は各権利者の商標または製品名である。
+> 添付のファームウェアは、M-VAVE が Apache License 2.0 で公開している V15 の復旧用イメージを改変したものである（[THIRD_PARTY.md](THIRD_PARTY.md)）。
 
 > **自己責任で使うこと。** 改造したファームウェアを書き込むと、メーカー保証を受けられなくなる場合がある。
 > 書き込みに失敗すると、最悪の場合は本体が使えなくなる（この機種の復旧方法は確立していない）。
@@ -59,14 +60,21 @@ FM-1 は MIDI のノートを送るだけなので、受け取ってショート
 ## 必要なもの
 
 - M-VAVE FM-1 本体
-- 公式ファームウェア V15：M-VAVE の Downloads ページにある `FM-1.fwsc`
-  - SHA-256 が `db1642b2b6fa5c2cccb11ffd13878068bb28601678d3644049f99dc40e7edb8a` のものだけを受け付ける。M-VAVE がこのファイルを差し替えると、パッチャーは使えなくなる
+- パッチ済みのファームウェア：[最新のリリース](https://github.com/smememe/fm1-macropad-patch/releases/latest) の `FM-1-macropad.fwsc`。
+  自分でパッチを当てる場合は、公式ファームウェア V15（M-VAVE の Downloads ページにある `FM-1.fwsc`）
+  - パッチャーは SHA-256 が `db1642b2b6fa5c2cccb11ffd13878068bb28601678d3644049f99dc40e7edb8a` のものだけを受け付ける。M-VAVE がこのファイルを差し替えると、パッチャーは使えなくなる
 - 公式の書き込みアプリ M-UPGRADE（Windows / macOS。M-VAVE の Downloads ページにある汎用版）
-- パッチを当てるには、ブラウザ（Chrome・Edge・Safari など）か Python 3.9 以上のどちらか
+- 自分でパッチを当てるには、ブラウザ（Chrome・Edge・Safari など）か Python 3.9 以上のどちらか
 
 ## 使い方
 
-### 1. パッチを当てる（ブラウザ・おすすめ）
+### 1. パッチ済みのファームウェアをダウンロードする（いちばん簡単）
+
+[最新のリリース](https://github.com/smememe/fm1-macropad-patch/releases/latest) から `FM-1-macropad.fwsc` をダウンロードする。
+SHA-256 は `4192103baeef0b4601a60e0ec55cd517371ec9834ce2e6b2964647e22aa98641` で、パッチャーが作るものと同じファイルである。
+このあとは手順 2 へ進む。
+
+### 1'. または自分でパッチを当てる（ブラウザ）
 
 1. パッチャーのページ <https://smememe.github.io/fm1-macropad-patch/> を開く
 2. `FM-1.fwsc` をページにドラッグするか、「ファイルを選ぶ」で選ぶ
@@ -76,7 +84,7 @@ FM-1 は MIDI のノートを送るだけなので、受け取ってショート
 処理はすべてブラウザの中で行い、ファイルはどこにも送らない（ページは通信を禁止する設定にしてある）。
 このリポジトリを zip でダウンロードし、`docs/index.html` をダブルクリックで開いても同じように使える（ネット接続は不要）。
 
-### 1'. パッチを当てる（Python）
+### 1''. または自分でパッチを当てる（Python）
 
 ソースを読んで確かめたい人向け。`FM-1.fwsc` を `fm1patch.py` と同じフォルダに置き、そのフォルダで次を実行する。
 Windows では `python3` の代わりに `py` を使う。
@@ -149,5 +157,5 @@ M-UPGRADE で公式の `FM-1.fwsc` を書き込めば元に戻る。
 
 - このリポジトリで作者が書いた部分は [MIT License](LICENSE)
 - 同梱物のライセンスは [THIRD_PARTY.md](THIRD_PARTY.md)
-- **M-VAVE のファームウェアと、[docs/PATCHES.md](docs/PATCHES.md) に照合用として載せた元のバイト列は M-VAVE（または各権利者）のものであり、MIT License の対象外である**
+- **リリースに添付したファームウェアと、[docs/PATCHES.md](docs/PATCHES.md) に照合用として載せた元のバイト列は MIT License の対象外である。** M-VAVE の V15 復旧用イメージを改変したもので、[Apache License 2.0](LICENSES/Apache-2.0.txt) で配布する。元のファイルの出どころと変更点は [THIRD_PARTY.md](THIRD_PARTY.md) を参照
 - M-VAVE および FM-1 は、各権利者の商標または製品名である

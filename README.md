@@ -8,11 +8,12 @@ It makes every button, key and knob send a USB-MIDI note.
 The patch alone does not turn the FM-1 into a macro pad. The patch turns every input into MIDI,
 and an app on your computer turns that MIDI into shortcuts. Together they let you use the FM-1 as a macro pad.
 
-**This repository does not contain any M-VAVE firmware.** Download `FM-1.fwsc` (V15) from the official
-website yourself and apply the patch locally.
+**A ready-to-flash firmware is attached to the [latest release](https://github.com/smememe/fm1-macropad-patch/releases/latest).** You can also make the same file
+yourself by applying the patch to the official `FM-1.fwsc` (V15).
 
 > **Unofficial and not affiliated with M-VAVE.** This project is not endorsed or supported by M-VAVE.
-> M-VAVE and FM-1 are trademarks or product names of their respective owners. **No M-VAVE firmware is included in this repository.**
+> M-VAVE and FM-1 are trademarks or product names of their respective owners.
+> The prebuilt firmware is a modified version of the V15 recovery image that M-VAVE publishes under the Apache License 2.0 ([THIRD_PARTY.md](THIRD_PARTY.md)).
 
 > **Use at your own risk.** Flashing modified firmware may void your warranty.
 > A failed update can, in the worst case, leave the unit unusable (no recovery method for this model is known).
@@ -59,14 +60,21 @@ The FM-1 only sends MIDI notes, so you need an app that receives them and turns 
 ## Requirements
 
 - An M-VAVE FM-1
-- Official firmware V15: `FM-1.fwsc` from the M-VAVE Downloads page
-  - Only the file with SHA-256 `db1642b2b6fa5c2cccb11ffd13878068bb28601678d3644049f99dc40e7edb8a` is accepted. If M-VAVE replaces this file, the patcher will stop working.
+- The patched firmware: `FM-1-macropad.fwsc` from the [latest release](https://github.com/smememe/fm1-macropad-patch/releases/latest),
+  or the official firmware V15 (`FM-1.fwsc` from the M-VAVE Downloads page) to patch it yourself
+  - The patcher accepts only the file with SHA-256 `db1642b2b6fa5c2cccb11ffd13878068bb28601678d3644049f99dc40e7edb8a`. If M-VAVE replaces this file, the patcher will stop working.
 - The official updater M-UPGRADE (Windows / macOS; the generic version on the M-VAVE Downloads page)
-- To apply the patch: a web browser (Chrome, Edge, Safari, etc.) or Python 3.9 or later
+- To apply the patch yourself: a web browser (Chrome, Edge, Safari, etc.) or Python 3.9 or later
 
 ## Usage
 
-### 1. Apply the patch (browser, recommended)
+### 1. Download the patched firmware (easiest)
+
+Download `FM-1-macropad.fwsc` from the [latest release](https://github.com/smememe/fm1-macropad-patch/releases/latest).
+Its SHA-256 is `4192103baeef0b4601a60e0ec55cd517371ec9834ce2e6b2964647e22aa98641`, the same file the patcher makes.
+Skip to step 2.
+
+### 1'. Or apply the patch yourself (browser)
 
 1. Open the patcher page: <https://smememe.github.io/fm1-macropad-patch/>
 2. Drop `FM-1.fwsc` onto the page, or click "choose a file"
@@ -75,7 +83,7 @@ The FM-1 only sends MIDI notes, so you need an app that receives them and turns 
 Everything runs inside your browser and the file is not uploaded anywhere (the page is configured to block all network requests).
 You can also download this repository as a zip and double-click `docs/index.html`; it works the same way offline.
 
-### 1'. Apply the patch (Python)
+### 1''. Or apply the patch yourself (Python)
 
 For those who want to read and check the source. Put `FM-1.fwsc` in the same folder as `fm1patch.py` and run this in that folder.
 On Windows, use `py` instead of `python3`.
@@ -148,5 +156,5 @@ changes the version string and one padding byte in the EQ name, then updates the
 
 - Code written by the author of this repository: [MIT License](LICENSE)
 - Bundled third-party code: see [THIRD_PARTY.md](THIRD_PARTY.md)
-- **The M-VAVE firmware, and the original byte sequences listed in [docs/PATCHES.md](docs/PATCHES.md) for verification, belong to M-VAVE (or their respective owners) and are not covered by the MIT License.**
+- **The firmware attached to the releases, and the original byte sequences listed in [docs/PATCHES.md](docs/PATCHES.md) for verification, are not covered by the MIT License.** They are a modified version of M-VAVE's V15 recovery image and are distributed under the [Apache License 2.0](LICENSES/Apache-2.0.txt); see [THIRD_PARTY.md](THIRD_PARTY.md) for the original source and the list of changes.
 - M-VAVE and FM-1 are trademarks or product names of their respective owners.

@@ -16,6 +16,10 @@
 
 ## 1. Get the official firmware
 
+The easiest way is to download the patched `FM-1-macropad.fwsc` from the
+[latest release](https://github.com/smememe/fm1-macropad-patch/releases/latest) and skip to step 3.
+It is the same file that step 2 produces. To make it yourself instead:
+
 Download `FM-1.fwsc` (V15) from the Downloads page of the official M-VAVE website.
 The patcher accepts only the file with this SHA-256:
 
