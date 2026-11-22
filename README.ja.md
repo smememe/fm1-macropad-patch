@@ -2,23 +2,15 @@
 
 # FM-1 マクロパッド化パッチ（非公式）
 
-M-VAVE FM-1 の公式ファームウェア V15 に当てる非公式パッチ。
-ボタン・鍵盤・ノブのすべてが USB-MIDI のノートを送るようになる。
+M-VAVE FM-1 の公式ファームウェア V15 に当てる非公式パッチ。ボタン・鍵盤・ノブのすべてが USB-MIDI のノートを送るようになる。
 
-パッチだけで左手デバイスになるわけではない。パッチで FM-1 の入力をすべて MIDI にし、
-その MIDI をパソコン側のアプリでショートカットに変えることで、左手デバイス（マクロパッド）として使えるようになる。
+パッチだけで左手デバイスになるわけではない。パッチで FM-1 の入力をすべて MIDI にし、その MIDI をパソコン側のアプリでショートカットに変えることで、左手デバイス（マクロパッド）として使えるようになる。
 
-**書き込める状態のファームウェアを [最新のリリース](https://github.com/smememe/fm1-macropad-patch/releases/latest) に添付してある。** 公式の `FM-1.fwsc`（V15）に
-自分でパッチを当てて、同じファイルを作ることもできる。
+**書き込める状態のファームウェアを [最新のリリース](https://github.com/smememe/fm1-macropad-patch/releases/latest) に添付してある**。公式の `FM-1.fwsc`（V15）に自分でパッチを当てて、同じファイルを作ることもできる。
 
-> **非公式の改造で、M-VAVE とは関係がない。** M-VAVE の承認も支援も受けていない。
-> M-VAVE と FM-1 は各権利者の商標または製品名である。
-> 添付のファームウェアは、M-VAVE が Apache License 2.0 で公開している V15 の復旧用イメージを改変したものである（[THIRD_PARTY.md](THIRD_PARTY.md)）。
+> **非公式の改造で、M-VAVE とは関係がない**。M-VAVE の承認も支援も受けていない。M-VAVE と FM-1 は各権利者の商標または製品名である。添付のファームウェアは、M-VAVE が Apache License 2.0 で公開している V15 の復旧用イメージを改変したものである（[THIRD_PARTY.md](THIRD_PARTY.md)）。
 
-> **自己責任で使うこと。** 改造したファームウェアを書き込むと、メーカー保証を受けられなくなる場合がある。
-> 書き込みに失敗すると、最悪の場合は本体が使えなくなる（この機種の復旧方法は確立していない）。
-> このソフトウェアは無保証で、使用によって生じた損害について作者は責任を負わない。
-> 書き込みの前に [docs/FLASHING.md](docs/FLASHING.md) の注意を読むこと。
+> **自己責任で使うこと**。改造したファームウェアを書き込むと、メーカー保証を受けられなくなる場合がある。書き込みに失敗すると、最悪の場合は本体が使えなくなる（この機種の復旧方法は確立していない）。このソフトウェアは無保証で、使用によって生じた損害について作者は責任を負わない。書き込みの前に [docs/FLASHING.md](docs/FLASHING.md) の注意を読むこと。
 
 ## できること
 
@@ -60,42 +52,39 @@ FM-1 は MIDI のノートを送るだけなので、受け取ってショート
 ## 必要なもの
 
 - M-VAVE FM-1 本体
-- パッチ済みのファームウェア：[最新のリリース](https://github.com/smememe/fm1-macropad-patch/releases/latest) の `FM-1-macropad.fwsc`。
-  自分でパッチを当てる場合は、公式ファームウェア V15（M-VAVE の Downloads ページにある `FM-1.fwsc`）
-  - パッチャーは SHA-256 が `db1642b2b6fa5c2cccb11ffd13878068bb28601678d3644049f99dc40e7edb8a` のものだけを受け付ける。M-VAVE がこのファイルを差し替えると、パッチャーは使えなくなる
+- 改造済みのファームウェア `FM-1-macropad.fwsc`（[最新のリリース](https://github.com/smememe/fm1-macropad-patch/releases/latest) からダウンロードする）
 - 公式の書き込みアプリ M-UPGRADE（Windows / macOS。M-VAVE の Downloads ページにある汎用版）
-- 自分でパッチを当てるには、ブラウザ（Chrome・Edge・Safari など）か Python 3.9 以上のどちらか
+- 自分でパッチを当てて作る場合だけ、次の 2 つも要る
+  - 公式ファームウェア V15：M-VAVE の Downloads ページにある `FM-1.fwsc`。パッチャーは SHA-256 が `db1642b2b6fa5c2cccb11ffd13878068bb28601678d3644049f99dc40e7edb8a` のものだけを受け付ける。M-VAVE がこのファイルを差し替えると、パッチャーは使えなくなる
+  - ブラウザ（Chrome・Edge・Safari など）か Python 3.9 以上
 
 ## 使い方
 
-### 1. パッチ済みのファームウェアをダウンロードする（いちばん簡単）
+### 1. ファームウェアを用意する
 
-[最新のリリース](https://github.com/smememe/fm1-macropad-patch/releases/latest) から `FM-1-macropad.fwsc` をダウンロードする。
-SHA-256 は `4192103baeef0b4601a60e0ec55cd517371ec9834ce2e6b2964647e22aa98641` で、パッチャーが作るものと同じファイルである。
-このあとは手順 2 へ進む。
+次の 3 つのどれかで `FM-1-macropad.fwsc` を用意する。どの方法でも同じファイルになる。
 
-### 1'. または自分でパッチを当てる（ブラウザ）
+#### 方法 A：ダウンロードする（いちばん簡単）
+
+[最新のリリース](https://github.com/smememe/fm1-macropad-patch/releases/latest) から `FM-1-macropad.fwsc` をダウンロードする。SHA-256 は `4192103baeef0b4601a60e0ec55cd517371ec9834ce2e6b2964647e22aa98641` である。
+
+#### 方法 B：自分でパッチを当てる（ブラウザ）
 
 1. パッチャーのページ <https://smememe.github.io/fm1-macropad-patch/> を開く
 2. `FM-1.fwsc` をページにドラッグするか、「ファイルを選ぶ」で選ぶ
-3. 「公式 V15 であることを確認しました」「書き換える 16 か所がすべて一致しました」と出たら、
-   「FM-1-macropad.fwsc をダウンロード」を押す
+3. 「公式 V15 であることを確認しました」「書き換える 16 か所がすべて一致しました」と出たら、「FM-1-macropad.fwsc をダウンロード」を押す
 
-処理はすべてブラウザの中で行い、ファイルはどこにも送らない（ページは通信を禁止する設定にしてある）。
-このリポジトリを zip でダウンロードし、`docs/index.html` をダブルクリックで開いても同じように使える（ネット接続は不要）。
+処理はすべてブラウザの中で行い、ファイルはどこにも送らない（ページは通信を禁止する設定にしてある）。このリポジトリを zip でダウンロードし、`docs/index.html` をダブルクリックで開いても同じように使える（ネット接続は不要）。
 
-### 1''. または自分でパッチを当てる（Python）
+#### 方法 C：自分でパッチを当てる（Python）
 
-ソースを読んで確かめたい人向け。`FM-1.fwsc` を `fm1patch.py` と同じフォルダに置き、そのフォルダで次を実行する。
-Windows では `python3` の代わりに `py` を使う。
+ソースを読んで確かめたい人向け。`FM-1.fwsc` を `fm1patch.py` と同じフォルダに置き、そのフォルダで次を実行する。Windows では `python3` の代わりに `py` を使う。
 
 ```bash
 python3 fm1patch.py FM-1.fwsc -o FM-1-macropad.fwsc
 ```
 
-どちらの方法も、公式ファームウェアの SHA-256 と、書き換える 16 か所の元のバイトを確かめてから書き換える。
-どれか一つでも合わなければ何も出力しない。出力の SHA-256 は必ず
-`4192103baeef0b4601a60e0ec55cd517371ec9834ce2e6b2964647e22aa98641` になる。
+方法 B・C はどちらも、公式ファームウェアの SHA-256 と、書き換える 16 か所の元のバイトを確かめてから書き換える。どれか一つでも合わなければ何も出力しない。出力の SHA-256 は必ず `4192103baeef0b4601a60e0ec55cd517371ec9834ce2e6b2964647e22aa98641` になる。
 
 ### 2. 書き込む
 
@@ -104,8 +93,7 @@ python3 fm1patch.py FM-1.fwsc -o FM-1-macropad.fwsc
 3. 「Update Firmware」を押し、完了の表示が出るまで待つ（20〜60 秒ほど）。本体は自動で再起動する
 4. ショートカット用のアプリ（下の「ショートカットを割り当てるアプリの例」）で鍵盤一つにショートカットを割り当て、押して動くことを確かめる
 
-仮想環境（Parallels など）の Windows で書き込む場合は、途中で本体が別の USB 機器として接続し直す。
-接続先を聞かれたら Windows を選び、続けて接続の許可を求められたら許可する。
+仮想環境（Parallels など）の Windows で書き込む場合は、途中で本体が別の USB 機器として接続し直す。接続先を聞かれたら Windows を選び、続けて接続の許可を求められたら許可する。
 
 ## 元に戻す
 
@@ -115,10 +103,9 @@ M-UPGRADE で公式の `FM-1.fwsc` を書き込めば元に戻る。
 
 - **パッチャーが SHA-256 の不一致で止まる**：入力が公式 V15 の `FM-1.fwsc` ではない。M-VAVE が配布ファイルを差し替えた場合もこうなる。その場合は Issues で知らせてほしい
 - **M-UPGRADE が本体を見つけない**：USB ケーブルを挿し直し、M-UPGRADE を起動し直す。ほかの MIDI アプリが本体をつかんでいれば閉じる
-- **「A firmware that does not conform to the device was selected」と出る**：ファイルが選ばれていないか、FM-1 用でない。パッチャーが作った `.fwsc` を選び直す
+- **「A firmware that does not conform to the device was selected」と出る**：ファイルが選ばれていないか、FM-1 用でない。`FM-1-macropad.fwsc` を選び直す
 - **書き込みが途中で止まった**：USB をつないだまま本体の電源を入れ直し、M-UPGRADE でもう一度書き込みを試す（作者は途中で止まった場合を試していない）
-- **ショートカットが動かない**：[入力モニター](https://smememe.github.io/fm1-macropad-patch/monitor.html)（Chrome・Edge）か MIDI モニターのアプリ（macOS は [MIDI Monitor](https://www.snoize.com/midimonitor/)、Windows は [MIDI-OX](http://www.midiox.com/) など）で、本体からノートが届いているか確かめる。
-  届いていればショートカット側のアプリの設定（ベロシティ条件など）を見直す。届いていなければ本体側（書き込み・接続）を疑う
+- **ショートカットが動かない**：[入力モニター](https://smememe.github.io/fm1-macropad-patch/monitor.html)（Chrome・Edge）か MIDI モニターのアプリ（macOS は [MIDI Monitor](https://www.snoize.com/midimonitor/)、Windows は [MIDI-OX](http://www.midiox.com/) など）で、本体からノートが届いているか確かめる。届いていればショートカット側のアプリの設定（ベロシティ条件など）を見直す。届いていなければ本体側（書き込み・接続）を疑う
 - **元に戻したい**：M-UPGRADE で公式の `FM-1.fwsc` を書き込む
 
 ## サポート
@@ -137,16 +124,12 @@ M-UPGRADE で公式の `FM-1.fwsc` を書き込めば元に戻る。
 
 ## 仕組み
 
-書き換えはすべて等長で、ファームウェアの大きさは変わらない。app 領域の 16 か所、合計 84 バイトを書き換え、
-版数文字列と EQ の名前の余白 1 バイトを変えて、チェックサムを付け直す。一覧は [docs/PATCHES.md](docs/PATCHES.md)、解析の要点は [docs/HOW_IT_WORKS.md](docs/HOW_IT_WORKS.md)（docs/ の資料は英語のみ）。
+書き換えはすべて等長で、ファームウェアの大きさは変わらない。app 領域の 16 か所、合計 84 バイトを書き換え、版数文字列と EQ の名前の余白 1 バイトを変えて、チェックサムを付け直す。一覧は [docs/PATCHES.md](docs/PATCHES.md)、解析の要点は [docs/HOW_IT_WORKS.md](docs/HOW_IT_WORKS.md)（docs/ の資料は英語のみ）。
 
 ## 開発する人へ
 
-- 書き換えの一覧は `fm1patch.py` にある。ブラウザ版（`docs/index.html`）は `web/src/` から作る：
-  `python3 web/export_patches.py && python3 web/build_web.py`。入力モニター（`docs/monitor.html`）と配置図
-  （`node web/make_layout_svg.cjs`）は `web/src/fm1layout.js` を共用する
-- テストには公式の `FM-1.fwsc` が要る：`FM1_FWSC=/path/to/FM-1.fwsc python3 tests/test_patch.py` と
-  `node tests/test_web.cjs /path/to/FM-1.fwsc`
+- 書き換えの一覧は `fm1patch.py` にある。ブラウザ版（`docs/index.html`）は `web/src/` から作る：`python3 web/export_patches.py && python3 web/build_web.py`。入力モニター（`docs/monitor.html`）と配置図（`node web/make_layout_svg.cjs`）は `web/src/fm1layout.js` を共用する
+- テストには公式の `FM-1.fwsc` が要る：`FM1_FWSC=/path/to/FM-1.fwsc python3 tests/test_patch.py` と `node tests/test_web.cjs /path/to/FM-1.fwsc`
 
 ## 謝辞
 
@@ -157,5 +140,5 @@ M-UPGRADE で公式の `FM-1.fwsc` を書き込めば元に戻る。
 
 - このリポジトリで作者が書いた部分は [MIT License](LICENSE)
 - 同梱物のライセンスは [THIRD_PARTY.md](THIRD_PARTY.md)
-- **リリースに添付したファームウェアと、[docs/PATCHES.md](docs/PATCHES.md) に照合用として載せた元のバイト列は MIT License の対象外である。** M-VAVE の V15 復旧用イメージを改変したもので、[Apache License 2.0](LICENSES/Apache-2.0.txt) で配布する。元のファイルの出どころと変更点は [THIRD_PARTY.md](THIRD_PARTY.md) を参照
+- **リリースに添付したファームウェアと、[docs/PATCHES.md](docs/PATCHES.md) に照合用として載せた元のバイト列は MIT License の対象外である**。M-VAVE の V15 復旧用イメージを改変したもので、[Apache License 2.0](LICENSES/Apache-2.0.txt) で配布する。元のファイルの出どころと変更点は [THIRD_PARTY.md](THIRD_PARTY.md) を参照
 - M-VAVE および FM-1 は、各権利者の商標または製品名である

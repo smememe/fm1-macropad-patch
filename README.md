@@ -60,21 +60,24 @@ The FM-1 only sends MIDI notes, so you need an app that receives them and turns 
 ## Requirements
 
 - An M-VAVE FM-1
-- The patched firmware: `FM-1-macropad.fwsc` from the [latest release](https://github.com/smememe/fm1-macropad-patch/releases/latest),
-  or the official firmware V15 (`FM-1.fwsc` from the M-VAVE Downloads page) to patch it yourself
-  - The patcher accepts only the file with SHA-256 `db1642b2b6fa5c2cccb11ffd13878068bb28601678d3644049f99dc40e7edb8a`. If M-VAVE replaces this file, the patcher will stop working.
+- The patched firmware `FM-1-macropad.fwsc` (download it from the [latest release](https://github.com/smememe/fm1-macropad-patch/releases/latest))
 - The official updater M-UPGRADE (Windows / macOS; the generic version on the M-VAVE Downloads page)
-- To apply the patch yourself: a web browser (Chrome, Edge, Safari, etc.) or Python 3.9 or later
+- Only if you want to apply the patch yourself:
+  - The official firmware V15: `FM-1.fwsc` from the M-VAVE Downloads page. The patcher accepts only the file with SHA-256 `db1642b2b6fa5c2cccb11ffd13878068bb28601678d3644049f99dc40e7edb8a`. If M-VAVE replaces this file, the patcher will stop working.
+  - A web browser (Chrome, Edge, Safari, etc.) or Python 3.9 or later
 
 ## Usage
 
-### 1. Download the patched firmware (easiest)
+### 1. Get the firmware
+
+Get `FM-1-macropad.fwsc` in one of the three ways below. All of them give the same file.
+
+#### Option A: Download it (easiest)
 
 Download `FM-1-macropad.fwsc` from the [latest release](https://github.com/smememe/fm1-macropad-patch/releases/latest).
-Its SHA-256 is `4192103baeef0b4601a60e0ec55cd517371ec9834ce2e6b2964647e22aa98641`, the same file the patcher makes.
-Skip to step 2.
+Its SHA-256 is `4192103baeef0b4601a60e0ec55cd517371ec9834ce2e6b2964647e22aa98641`.
 
-### 1'. Or apply the patch yourself (browser)
+#### Option B: Apply the patch yourself (browser)
 
 1. Open the patcher page: <https://smememe.github.io/fm1-macropad-patch/>
 2. Drop `FM-1.fwsc` onto the page, or click "choose a file"
@@ -83,7 +86,7 @@ Skip to step 2.
 Everything runs inside your browser and the file is not uploaded anywhere (the page is configured to block all network requests).
 You can also download this repository as a zip and double-click `docs/index.html`; it works the same way offline.
 
-### 1''. Or apply the patch yourself (Python)
+#### Option C: Apply the patch yourself (Python)
 
 For those who want to read and check the source. Put `FM-1.fwsc` in the same folder as `fm1patch.py` and run this in that folder.
 On Windows, use `py` instead of `python3`.
@@ -92,7 +95,7 @@ On Windows, use `py` instead of `python3`.
 python3 fm1patch.py FM-1.fwsc -o FM-1-macropad.fwsc
 ```
 
-Both methods check the SHA-256 of the official firmware and the original bytes at all 16 patch sites before writing anything.
+Options B and C both check the SHA-256 of the official firmware and the original bytes at all 16 patch sites before writing anything.
 If anything does not match, nothing is produced. The output always has SHA-256
 `4192103baeef0b4601a60e0ec55cd517371ec9834ce2e6b2964647e22aa98641`.
 
@@ -114,7 +117,7 @@ Flash the official `FM-1.fwsc` with M-UPGRADE.
 
 - **The patcher stops with a SHA-256 mismatch**: the input is not the official V15 `FM-1.fwsc`. This also happens if M-VAVE replaces the file on their site; please report it in Issues.
 - **M-UPGRADE does not find the unit**: reconnect the USB cable and restart M-UPGRADE. Close any other MIDI app that may be holding the device.
-- **"A firmware that does not conform to the device was selected"**: no file is selected, or it is not an FM-1 file. Select the `.fwsc` made by the patcher again.
+- **"A firmware that does not conform to the device was selected"**: no file is selected, or it is not an FM-1 file. Select `FM-1-macropad.fwsc` again.
 - **The update stopped halfway**: keep USB connected, power-cycle the unit, and try flashing again with M-UPGRADE (the author has not tested an interrupted update).
 - **A shortcut does not fire**: check whether the unit sends notes with the [input monitor](https://smememe.github.io/fm1-macropad-patch/monitor.html) (Chrome / Edge) or a MIDI monitor app (e.g. [MIDI Monitor](https://www.snoize.com/midimonitor/) on macOS or [MIDI-OX](http://www.midiox.com/) on Windows).
   If it does, check your shortcut app (velocity conditions, etc.). If it does not, suspect the flashing or the connection.
